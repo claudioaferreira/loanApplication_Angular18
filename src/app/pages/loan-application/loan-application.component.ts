@@ -21,6 +21,7 @@ export class LoanApplicationComponent {
     const loanstring = JSON.stringify(this.loan);
     const newloand = JSON.parse(loanstring);
   this.application.Loans.push(newloand);
+  this.loan = new Loan();
   }
 
 
